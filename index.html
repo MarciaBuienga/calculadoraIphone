@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <title>Calculadora - apple</title>
+        <script defer src="app.js"></script>
+    </head>
+<body>
+    <div class="container">
+
+        <h1>Calculadora</h1>
+
+        <div class="row">
+            <input id="screen" type="text" readonly placeholder="0">
+        </div>
+
+        <div class="row">
+            <button class="button" value="C" id="bt1" onclick="clearScreen('')">AC</button>
+            <button class="button" value="±" id="bt1" onclick="plusminus()">+/-</button>
+            <button class="button" value="%" id="bt1" onclick="percent()">%</button>
+            <button class="button" value="/" id="bt2" onclick="press('/')">÷</button>
+        </div>
+
+        <div class="row">
+            <button class="button" value="7" onclick="press(7)">7</button>
+            <button class="button" value="8" onclick="press(8)">8</button>
+            <button class="button" value="9" onclick="press(9)">9</button>
+            <button class="button" value="x" onclick="press('*')" id="bt2">x</button>
+        </div>
+
+        <div class="row">
+            <button class="button" value="4" onclick="press(4)">4</button>
+            <button class="button" value="5" onclick="press(5)">5</button>
+            <button class="button" value="6" onclick="press(6)">6</button>
+            <button class="button" value="-" id="bt2" onclick="press('-')">-</button>
+        </div>
+
+        <div class="row">
+            <button class="button" value="1" onclick="press(1)">1</button>
+            <button class="button" value="2" onclick="press(2)">2</button>
+            <button class="button" value="3" onclick="press(3)">3</button>
+            <button class="button" value="+" onclick="press('+')" id="bt2">+</button>
+        </div>
+
+        <div class="row">
+            <button class="button" value="0" onclick="press(0)" id="zero">0</button>
+            <button class="button" value="." onclick="press('.')">.</button>
+            <button class="button" value="=" onclick="calculate()" id="bt2">=</button>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
